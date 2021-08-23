@@ -1,0 +1,19 @@
+{
+	"type": "mysql",
+	"host": "localhost",
+	"port": 3306,
+	"username": "root",
+	"password": "admin",
+	"database": "metamorph",
+	"charset": "utf8mb4",
+	"synchronize": false,
+	"logging": false,
+	"entities": ["src/database/entity/**/*ts"],
+	"migrations": ["src/database/migration/**/*.ts"],
+	"subscribers": ["src/main/subscriber/**/*.ts"],
+	"cli": {
+		"entitiesDir": "src/database/entity",
+		"migrationsDir": "src/database/migration",
+		"subscribersDir": "src/main/subscriber"
+	}
+}
